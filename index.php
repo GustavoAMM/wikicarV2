@@ -15,7 +15,7 @@
             <h1><span class="wiki">Wiki</span><span class="car">car</span></h1>
             <p><span class="uno">"Don't dream it,</span>   <span class="dos">just drive it"</span></p>
             <form action="login\login.php">
-            <button>Entrar</button>
+            <button>Enter</button>
             </form>
             </div>
         </div>
