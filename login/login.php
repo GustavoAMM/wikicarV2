@@ -8,9 +8,26 @@
     <title>wikicar</title>
 </head>
 <body>
-    <h1>wikicar</h1>
-    <form action="">
-        
+
+<div class="container">
+
+  <div class="brand-logo"></div>
+  <div class="brand-title">WIKICAR</div>
+
+  <div class="inputs">
+
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="E-mail"/><br>
+    <input type="password" placeholder="Password"/><br>
+
+    <button type="submit">Login</button>
+    <form action="createaccount.php">
+    <button type="submit">Create account</button>
     </form>
+
+  </div>
+
+</div>
+
 </body>
 </html>

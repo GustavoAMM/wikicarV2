@@ -1,7 +1,9 @@
 input {
     caret-color: red;
   }
-  
+  select{
+    appearance:none;
+  }
   body {
     margin: 0;
     width: 100vw;
@@ -19,7 +21,7 @@ input {
   .container {
     position: relative;
     width: 350px;
-    height: 590px;
+    height: 700px;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
@@ -51,7 +53,7 @@ input {
     margin-top: 30px;
   }
   
-  label, input, button {
+  label, input, button,select {
     display: block;
     width: 100%;
     padding: 0;
@@ -64,15 +66,12 @@ input {
     margin-bottom: 4px;
   }
   
-  label:nth-of-type(2) {
-    margin-top: 12px;
-  }
   
   input::placeholder {
-    color: gray;
+    color: black;
   }
   
-  input {
+  input,select {
     background: #ecf0f3;
     padding: 10px;
     padding-left: 20px;
@@ -98,8 +97,3 @@ input {
     box-shadow: none;
   }
   
-  h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
