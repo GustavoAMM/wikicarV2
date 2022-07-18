@@ -1,52 +1,69 @@
 body{
-background: url("../img/fondo.jpg");
-background-size: 100%;
+margin: 0%;
+padding: 0%;
 }
-h1{
-    color: white;
-    font-size: 1.5em;
-    position: absolute;
-    font-family:Helvetica;
-    left: 36%;
-    top: 4%;
+.derecho{
+    background-color: #000000;
+    height: 100vh;
+    width: 50%;
 }
-.form-box{
-    position: absolute;
-    top: 85%;
-    left: 46%;
+
+.izquierdo{
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;  
 }
-/* From uiverse.io by @hannahyockel */
-button {
+#fondo{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 38px;
-    border-radius: 16px;
-    border: 1px solid transparent;
-    color: #FFFFFF;
-    background-color: #38A3A5;
-    font-size: 16px;
-    letter-spacing: 1px;
-    transition: all 0.15s linear;
+}
+.wiki{
+    color:#E63946;
+}
+.car{
+    color:#F1FAEE;
+}
+p{
+    color:#f94144;
+}
+.uno{
+    color:#f72585;
+}
+.dos{
+    color: #b5179e;
+}
+.login{
+    font-size: 250%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
    }
    
    button:hover {
-    background-color: rgba(29, 201, 160, 0.08);
-    border-color: #1DC9A0;
-    color: #1DC9A0;
-    transform: translateY(-5px) scale(1.05);
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
    }
    
    button:active {
-    background-color: transparent;
-    border-color: #1DC9A0;
-    color: #1DC9A0;
-    transform: translateY(5px) scale(0.95);
-   }
-   
-   button:disabled {
-    background-color: rgba(255, 255, 255, 0.16);
-    color: #8E8E93;
-    border-color: #8E8E93;
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
    }
