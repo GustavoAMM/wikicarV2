@@ -17,7 +17,6 @@
             <button>Entrar</button>
             </div>
         </div>
-        <img src="img\ico\wc.png" >
     </section>
 </body>
 </html>
