@@ -22,7 +22,7 @@ if(strlen($_POST['name']) >= 1 && strlen($_POST['email']) >=1 && strlen($_POST['
     $filas=mysqli_num_rows($resultado);
 
     if($filas){            
-        header("location:../../homescreen/homescreen.php");
+        header("location:../../homescreen/code/mainscreen.php");
     }else{
     ?>
     <?php
