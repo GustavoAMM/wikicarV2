@@ -15,12 +15,12 @@
   <div class="brand-title">WIKICAR</div>
 
   <div class="inputs">
-
-    <input type="text" placeholder="Name"><br>
-    <input type="email" placeholder="E-mail"/><br>
-    <input type="password" placeholder="Password"/><br>
-
+  <form action="validateLogin.php" method="post">
+    <input type="text" placeholder="Name" name="name"><br>
+    <input type="email" placeholder="E-mail" name="email"><br>
+    <input type="password" placeholder="Password" name="password"/><br>
     <button type="submit">Login</button>
+    </form>
     <form action="createaccount.php">
     <button type="submit">Create account</button>
     </form>
