@@ -5,28 +5,27 @@
 </html>
 <?php
 
-include("../conexion/conexion.php");
+include("../../conexion/conexion.php");
 $conexion = new Conexion("localhost:3306","wikicar","root","");
 
-if(strlen($_POST['name']) >= 1 && strlen($_POST['last']) >=1 && strlen($_POST['email']) >=1 && strlen($_POST['password']) >=1 && strlen($_POST['gender']) >=1){
-    $name = trim($_POST['name']);
-    $last = trim($_POST['last']);
+if(strlen($_POST['email']) >= 1 && strlen($_POST['password']) >=1){
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
-    $gender = trim($_POST['gender']);
-    $consulta = "insert into user( User_name,User_lastname,Password,Email,Gender) VALUES ('".$name."','".$last."','".$password."','".$email."','".$gender."')";
+
+    $consulta = "update user set Password = '".$password."' where email = '".$email."'";
     $resultado = mysqli_query($conexion->getConexion(),$consulta);
+    
     if($resultado){
         ?>
         <?php
         include("login.php");
         ?>
-        <h3 class="ok">Registration completed, enjoy your account</h3>
+        <h3 class="ok">don't forget your new password :)</h3>
         <?php
     }else{
         ?>
         <?php
-        include("createaccount.php");
+        include("newpass.php");
         ?>
         <h3 class="bad">An error has occurred</h3>
         <?php
@@ -34,7 +33,7 @@ if(strlen($_POST['name']) >= 1 && strlen($_POST['last']) >=1 && strlen($_POST['e
 }else{
     ?>
     <?php
-    include("createaccount.php");
+    include("newpass.php");
     ?>
     <h3 class="bad">Complete the data</h3>
     <?php

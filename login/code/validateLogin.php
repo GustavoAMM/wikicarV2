@@ -5,7 +5,8 @@
 </html>
 <?php
 
-include("../conexion/conexion.php");
+include("../../conexion/conexion.php");
+
 $conexion = new Conexion("localhost:3306","wikicar","root","");
 
 if(strlen($_POST['name']) >= 1 && strlen($_POST['email']) >=1 && strlen($_POST['password']) >=1){
@@ -21,7 +22,7 @@ if(strlen($_POST['name']) >= 1 && strlen($_POST['email']) >=1 && strlen($_POST['
     $filas=mysqli_num_rows($resultado);
 
     if($filas){            
-        header("location:../homescreen/homescreen.php");
+        header("location:../../homescreen/homescreen.php");
     }else{
     ?>
     <?php
