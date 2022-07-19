@@ -26,10 +26,11 @@ input {
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   }
+  
   .brand-logo {
     height: 100px;
     width: 100px;
-    background: url("../img/ico/icono2.png");
+    background: url("../img/ico/icono.png");
     margin: auto;
     border-radius: 50%;
     box-sizing: border-box;
@@ -38,13 +39,14 @@ input {
     background-position: center;
   }
   
-  .brand-title {
+  .brand-title{
     margin-top: 10px;
     font-weight: 900;
     font-size: 1.8rem;
     color: #1DA1F2;
     letter-spacing: 1px;
   }
+  
   
   .inputs {
     text-align: left;
@@ -103,3 +105,16 @@ input {
     top: 0;
     left: 0;
   }
+  
+a {
+  position: absolute;
+  font-size: 15px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+

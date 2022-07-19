@@ -1,72 +1,117 @@
-body{
-margin: 0%;
-padding: 0%;
-background: #000000;
+:root {
+    --mainColor: #6B5CFF;
 }
-button {
-    padding: 17px 40px;
-    border-radius: 50px;
-    border: 0;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all .5s ease;
-   }
-   
-button:hover {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
-   }
-   
-button:active {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-    transform: translateY(10px);
-    transition: 100ms;
-   }
 
-p{
-    color:#f94144;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.derecho{
-    background-color: #000000;
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wave {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 100vw;
     height: 100vh;
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
 }
 
-.izquierdo{
-    background: url("../img/fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 100vh;  
-}
-#fondo{
+.img {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.wiki{
-    color:#E63946;
+
+.img img {
+    width: 500px;
 }
-.car{
-    color:#F1FAEE;
+
+.login-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 360px;
+    text-transform: uppercase;
+}
+
+.avatar {
+    width: 100px;
+}
+
+.input-div {
+    margin: 25px 0;
+    padding: 5px 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #5245ca;
+}
+
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: var(--mainColor);
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    .login-container {
+        justify-content: center;
+        color: var(--mainColor);
+    }
+
+    .form-login {
+        padding: 40px;
+        background-color: #fff;
+        width: 420px;
+        border-radius: 8px;
+        box-shadow: 3px 3px 15px rgba(88, 34, 160, 0.2);
+    }
 }
 
 .uno{
-    color:#f72585;
+    color:#7209B7;
 }
 .dos{
-    color: #b5179e;
-}
-.login{
-    font-size: 250%;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 55%;
+    color: #560BAD;
 }

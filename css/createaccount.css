@@ -3,7 +3,10 @@ input {
   }
   select{
     appearance:none;
+    color: gray;
   }
+ 
+
   body {
     margin: 0;
     width: 100vw;
@@ -20,10 +23,10 @@ input {
   
   .container {
     position: relative;
-    width: 350px;
-    height: 700px;
+    width: 400px;
+    height: 630px;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     box-sizing: border-box;
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
@@ -31,7 +34,7 @@ input {
   .brand-logo {
     height: 100px;
     width: 100px;
-    background: url("../img/ico/icono2.png");
+    background: url("../img/ico/icono.png");
     margin: auto;
     border-radius: 50%;
     box-sizing: border-box;
@@ -50,7 +53,7 @@ input {
   
   .inputs {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 5px;
   }
   
   label, input, button,select {
@@ -68,7 +71,7 @@ input {
   
   
   input::placeholder {
-    color: black;
+    color: gray;
   }
   
   input,select {

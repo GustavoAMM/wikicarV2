@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\inicio.css">
-    <title>wikicar</title>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c0078485ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type"text/css" href="../css/inicio.css">
+
 </head>
+
 <body>
-    <section id="fondo">
-        <div class="izquierdo"></div>
-        <div class="derecho">
-            <div class="login">
-            <h1><span class="wiki">Wiki</span><span class="car">car</span></h1>
-            <p><span class="uno">"Don't dream it,</span>   <span class="dos">just drive it"</span></p>
-            <form action="login\login.php">
-            <button>Enter</button>
-            </form>
-            </div>
+    <img src="../img/fondoinicio.png" alt="" class="wave">
+    <div class="container">
+        <div class="img">
+            <img src="../img/fondo.png" alt="">
         </div>
-    </section>
+        <div class="login-container">
+            <form class="form-login" action="../login/login.php">
+                <img class="avatar" src="../img/ico/icono.png" alt="">
+                <div class="input-div one">
+                </div>
+              <p><span class="uno">"Don't dream it,</span>   <span class="dos">just drive it"</span></p>
+                <input type="submit" class="btn" value="Enter">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
