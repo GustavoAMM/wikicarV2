@@ -38,8 +38,6 @@ if(strlen($_POST['name']) >= 1 && strlen($_POST['email']) >=1 && strlen($_POST['
     <h3 class="bad">Complete the data</h3>
     <?php
 }
-//liberar memoria de las consultas
-
 //cerrar conexion
 $conexion->setClose($conexion->getConexion());
 ?>

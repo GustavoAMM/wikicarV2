@@ -33,7 +33,7 @@ if(strlen($_POST['email']) >= 1 && strlen($_POST['password']) >=1){
 }else{
     ?>
     <?php
-    include("createaccount.php");
+    include("newpass.php");
     ?>
     <h3 class="bad">Complete the data</h3>
     <?php
