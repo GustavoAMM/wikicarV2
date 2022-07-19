@@ -37,18 +37,15 @@ public function __construct($servername,$database,$username,$password){
     public function setConnection($servername,$database,$username,$password){
         $this->conn=mysqli_connect($servername, $username, $password, $database);
     
-        //check connection
         if(!$this->conn){
             die("Conexion fallida: ". mysqli_connect_error());
-        }
-        echo "¡Conexion exitosa!";}
+        }}
 
     public function getConexion(){
         return $this->conn;
     }
     public function setClose($conn){
         mysqli_close($conn);
-        echo "¡Cerrar Conexion!";
     }
 }
 ?>

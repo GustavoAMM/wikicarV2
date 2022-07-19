@@ -15,18 +15,20 @@
   <div class="brand-title">Wikicar</div>
 
   <div class="inputs">
-    <input type="text" placeholder="Name"><br>
-    <input type="text" placeholder="Last name"><br>
-    <input type="email" placeholder="E-mail"/><br>
-    <input type="password" placeholder="Password"/>
-    <p>
-      <select name="gender">
-        <option value="" disabled="" selected="">Gender</option>
-        <option value="m">Male</option>
-        <option value="f">Feminine</option>
-      </select>
-    </p>
-    <button type="submit">Register</button>
+    <form action="validateaccount.php" method="post">
+      <input type="text" placeholder="Name" values="" name="name"><br>
+      <input type="text" placeholder="Last name" values="" name="last"><br>
+      <input type="email" placeholder="E-mail" values="" name="email"><br>
+      <input type="password" placeholder="Password" values="" name="password">
+      <p>
+        <select name="gender">
+          <option value="" disabled="" selected="">Gender</option>
+          <option value="m">Male</option>
+          <option value="f">Feminine</option>
+        </select>
+      </p>
+      <button type="submit">Register</button>
+    </form>
     <form action="login.php">
       <button type="submit">I already have an account</button>
     </form>

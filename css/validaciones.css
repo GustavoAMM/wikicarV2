@@ -1,0 +1,23 @@
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 2px;
+	background-color: #1e6;
+	color: #fff
+}
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 2px;
+	background-color: #a22;
+	color: #fff
+}
+
+.bad{
+    position: absolute;
+    top: -2%;
+}
+.ok{
+    position: absolute;
+    top: -2%;
+}

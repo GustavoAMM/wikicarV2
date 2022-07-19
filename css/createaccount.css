@@ -1,8 +1,7 @@
 select{
   appearance:none;
-  color: gray;
 }
- 
+
 body {
   margin: 0;
   width: 100vw;
@@ -66,7 +65,7 @@ input::placeholder {
   color: gray;
 }
   
-input,select {
+input {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
@@ -91,4 +90,3 @@ button {
 button:hover {
   box-shadow: none;
 }
-  
