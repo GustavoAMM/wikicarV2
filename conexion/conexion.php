@@ -1,16 +1,12 @@
 <?php
 class Conexion{
-private $servername;
-private $database;
-private $username;
-private $password;
+private $servername = "localhost:3306";
+private $database = "wikicar";
+private $username = "root";
+private $password = "";
 private $conn;
 
-public function __construct($servername,$database,$username,$password){
-    $this->servername=$servername;
-    $this->database=$database;
-    $this->username=$username;
-    $this->password=$password;
+public function __construct(){
     $this->setConnection($this->servername,$this->database,$this->username,$this->password);
 }
 
