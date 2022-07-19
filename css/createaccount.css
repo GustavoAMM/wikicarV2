@@ -1,5 +1,6 @@
 select{
   appearance:none;
+  color: gray;
 }
 
 body {
@@ -52,7 +53,7 @@ body {
   margin-top: 5px;
 }
   
-input, button,select {
+label,input, button,select {
   display: block;
   width: 100%;
   padding: 0;
@@ -60,12 +61,15 @@ input, button,select {
   outline: none;
   box-sizing: border-box;
 }
+label{
+  margin-bottom: 4px;
+}
 
 input::placeholder {
   color: gray;
 }
   
-input {
+input,select {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;
