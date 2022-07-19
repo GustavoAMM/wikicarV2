@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <img src="login/img/fondoinicio.png" alt="" class="wave">
+    <img src="login/img/fondo.png" alt="" class="wave">
     <div class="container">
         <div class="img">
-            <img src="login/img/fondo.png" alt="">
+            <img src="login/img/vector.png" alt="">
         </div>
             <div class="login-container">
                 <form class="form-login" action="login/code/login.php">
