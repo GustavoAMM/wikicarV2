@@ -1,18 +1,24 @@
 <?php
+include("queries.php");
 
-include("select.php");
+$pruebaInsert = new BasicInsert(" ('', 'Raul', 'Alvares', 'rraull', 'raulito@gmail.com', 'M')", "user", "");
+$result = $pruebaInsert->getBasicInsert();
 
-$prueba = new BasicSelect("*", "user", "");
+$prueba = new BasicSelect("User_name, Id_user", "user", "");
 $result = $prueba->getBasicSelect();
-echo "<table border>\n";
+
+echo "<form >";
+echo '<select name="name" id="">';
+echo "<option> Seleccionar </option>\n";
 
 while($row = mysqli_fetch_row($result)){
-    echo "<tr>\n";
     foreach($row as $field){
-        echo "<td>$field</td>\n";
+        echo "<option>$field</option>\n";
     }
-    echo"</tr>\n";
 }
-echo "</table>\n";
+
+echo "</select>";
+echo "</form>";
+
 
 ?>
