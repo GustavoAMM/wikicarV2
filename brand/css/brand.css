@@ -1,0 +1,161 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #1DA1F2;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #4361EE;
+}
+nav .start-main, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #4361EE;
+}
+nav .start-models, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #4361EE;
+}
+nav .start-about, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #4361EE;
+}
+nav .start-exit, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #F72585;
+}
+  
+  body {
+	margin: 0;
+	background: #ecf0f3;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	place-items: center;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: sans-serif;
+  }
+	
+  .container {
+	position: absolute;
+	top: 200%;
+	left: 15%;
+	width: 425px;
+	height: 525px;
+	border-radius: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #ecf0f3;
+	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+  
+  .brand-logo {
+	height: 100px;
+	width: 100px;
+	background: url("../img/ico/icono.png");
+	margin: auto;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+	
+  .brand-title {
+	margin-top: 10px;
+	font-weight: 900;
+	font-size: 1.8rem;
+	color: #1DA1F2;
+	letter-spacing: 1px;
+  }
+	
+  .inputs {
+	text-align: left;
+	margin-top: 30px;
+  }
+	
+  input, button {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+  }
+  
+  
+  input::placeholder {
+	color: gray;
+  }
+	
+  input,select {
+	background: #ecf0f3;
+	padding: 10px;
+	padding-left: 20px;
+	height: 50px;
+	font-size: 14px;
+	border-radius: 50px;
+	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+	
+  button {
+	color: white;
+	margin-top: 20px;
+	background: #1DA1F2;
+	height: 40px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 900;
+	box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+	transition: 0.5s;
+  }
+	
+  button:hover {
+	box-shadow: none;
+  }
+  

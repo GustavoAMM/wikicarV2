@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome</h1>
+<nav>
+	<a href="mainscreen.php">Home</a>
+	<a href="../../brand/code/brand.php">Brand</a>
+	<a href="../../modelos/code/model.php">Models</a>
+	<a href="../../about/code/about.php">About</a>
+	<a href="../../index.php">Exit</a>
+	<div class="animation start-home"></div>
+</nav>
 </body>
 </html>

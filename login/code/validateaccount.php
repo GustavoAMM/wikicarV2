@@ -28,6 +28,9 @@ if(strlen($_POST['name']) >= 1 && strlen($_POST['last']) >=1 && strlen($_POST['e
         <?php
         include("createaccount.php");
         ?>
+         <?php
+        include("createaccount.php");
+        ?>
         <h3 class="bad">An error has occurred</h3>
         <?php
     }
