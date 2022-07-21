@@ -14,7 +14,7 @@ class BasicSelect extends Conexion{
         $this -> createSelect($askedData, $table, $condition);
         $this -> executeSelect($this->query);
 
-    }
+    }//primarias compuesas 
 
     public function createSelect($askedData, $table, $condition){
         if($condition == ""){
